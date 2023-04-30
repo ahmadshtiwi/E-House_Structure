@@ -1,0 +1,103 @@
+:root
+{    --background-card:#e5cc99aa;
+    --master-color:#e5cc99;
+    --background-buttons:#fff;
+    --text-color-white:#FFF;
+    --text-color-black:#000;
+    --text-color-error:#F00;
+    --text-size:16px;
+    --text-size-button:20px; 
+    --height-box:25px;
+
+    --font-style:Lexend Deca;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family:var(--font-style);
+    font-weight: 900;
+    background-color: #eee;
+}
+
+
+.signup-page
+{
+    display: flex;
+    font-size: var(--text-size);
+    
+}
+.signup-page img
+{
+height: 800px;
+}
+
+
+.box-signup
+{
+    display: flex;
+    flex-flow: column;
+    height: fit-content;
+    margin: auto;
+    padding: 40px;
+    background-color: var(--background-card);
+    border-radius: 50px 8px ;
+    text-align: center;
+    
+}
+.form{
+    display: flex;
+    flex-flow: column;
+}
+.signup-items
+{
+    margin-top: 20px;
+    text-align: start;
+}
+.signup-btn
+{
+    margin-top: 30px;
+    padding: 10px;
+    width: fit-content;
+    align-self: center;
+    background-color: var(--background-buttons);
+    font-size: var(--text-size-button);
+    border-radius: 50px 8px;
+}
+.error
+{
+    color: var(--text-color-error);
+}
+.gender
+{
+    display: flex;
+    flex-flow: column;   
+    justify-content: center;
+
+
+}
+.birthday
+{
+    display: flex;
+    flex-flow: column; 
+    justify-content: center;
+    margin: 5px;
+
+}
+.g_f
+{
+    display: flex;
+    align-content:space-between;
+    
+}
+.box-item
+{
+    height: var(--height-box);
+    text-align: center;
+    font-weight: 700;
+    font-family: var(--font-style);
+}

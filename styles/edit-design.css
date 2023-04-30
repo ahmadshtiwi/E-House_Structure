@@ -1,0 +1,107 @@
+/******************************** general **************************************/
+
+:root
+{    --background-card:#e5cc99aa;
+    --bacground-body:#eee;
+    --background-buttons:#fff;
+    --master-color:#e5cc99;
+    --text-color-white:#FFF;
+    --text-color-black:#000;
+    --text-size-head:30px;
+    --text-size-list:14px;
+    --text-size-button:14px;
+    --text-size-name-app:20px;
+    --text-color-attribute:#F00;
+    --width-image:300px;
+    --height-image:300px;
+    --width-box:30px;
+    --height-box:30px;
+    --width-area-box:50px;
+    --font-style:Lexend Deca;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family:var(--font-style);
+    font-weight: 900;
+    background-color: var(--bacground-body);
+}
+/**************************************** card in body *************************/
+.card
+{
+    background-color:var(--background-card);
+    padding: 10px;
+    display: inline-flex;
+    flex-flow: column;
+    border-radius: 50px 8px;
+    font-family:var(--font-style);
+    
+}
+.card img{
+    align-self: center;
+    width:var(--width-image);
+    height: var(--height-image);
+    border-radius: 20px;
+    
+}
+
+
+.card  span
+{
+color: var(--text-color-attribute);
+}
+
+.card button{
+    background-color: var(--text-color-white);
+    font-size: var(--text-size-button);
+    font-family: var(--font-style);
+    color: var(--text-color-black);
+    text-align: center;
+    padding: 10px;
+    font-weight: 900;
+    border-radius: 50px 8px;
+    margin-top: 10px;
+}
+.price
+{
+    margin-top:10px ;
+}
+.card div input{
+    background-color: transparent;
+    border: none;
+    width:100px;
+    text-align: center;
+    color: var(--text-color-attribute);
+    border: 2px black solid;
+    font-size: var(--text-size-button);
+    font-family: var(--font-style);
+    margin: 2px;
+    border-radius: 8px;
+
+
+}
+.buttons
+{
+    display:flex;
+    justify-content: space-around;
+}
+
+.btn-upload
+{
+    
+    text-align: center;
+}
+
+.designs
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap:30px  0px;
+    margin-top: 30px;
+}

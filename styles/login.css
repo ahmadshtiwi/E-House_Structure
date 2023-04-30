@@ -1,0 +1,74 @@
+:root
+{    --background-card:#e5cc99aa;
+    --master-color:#e5cc99;
+    --background-buttons:#fff;
+    --text-color-white:#FFF;
+    --text-color-black:#000;
+    --text-color-error:#F00;
+    --text-size:16px;
+    --text-size-button:20px;
+    --font-style:Lexend Deca;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family:var(--font-style);
+    font-weight: 900;
+    background-color: #eee;
+}
+
+
+.login-page
+{
+    display: flex;
+    font-size: var(--text-size);
+    
+}
+.login-page img
+{
+height: 800px;
+}
+
+
+.box-login
+{
+    display: flex;
+    flex-flow: column;
+    height: fit-content;
+    margin: auto;
+    padding: 50px;
+    background-color: var(--background-card);
+    border-radius: 50px 8px ;
+    text-align: center;
+    
+}
+.form
+{
+    display: flex;
+    flex-flow: column;
+}
+.login-items
+{
+    margin-top: 20px;
+    text-align: start;
+}
+.login-btn
+{
+    margin-top: 30px;
+    padding: 10px;
+    width: fit-content;
+    align-self: center;
+    background-color: var(--background-buttons);
+    font-size: var(--text-size-button);
+    border-radius: 50px 8px;
+}
+.error
+{
+    color: var(--text-color-error);
+}
+

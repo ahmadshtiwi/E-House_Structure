@@ -1,0 +1,88 @@
+
+/******************************** general **************************************/
+
+:root
+{    --background-card:#e5cc99aa;
+    --bacground-body:#eee;
+    --background-buttons:#fff;
+    --master-color:#e5cc99;
+    --text-color-white:#FFF;
+    --text-color-black:#000;
+    --text-size:18px;
+
+    --text-color-attribute:#F00;
+    --width-image:300px;
+    --height-image:300px;
+    --width-box:30px;
+    --height-box:30px;
+    --width-area-box:50px;
+    --font-style:Lexend Deca;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family:var(--font-style);
+    font-weight: 900;
+    background-color: var(--bacground-body);
+}
+/*******************************************/
+
+.designs
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px;
+    justify-content: space-evenly;
+    
+}
+
+
+/**************************************** card in body *************************/
+.card
+{
+    background-color:var(--background-card);
+    padding: 10px;
+    display: inline-flex;
+    flex-flow: column;
+    border-radius: 50px 8px;
+    font-family:var(--font-style);
+    font-size: 16px;
+    
+}
+.card img{
+    align-self: center;
+    width:var(--width-image);
+    height: var(--height-image);
+    object-fit: cover;
+    border-radius: 20px;
+    
+}
+
+.card  span
+{
+color: var(--text-color-attribute);
+}
+
+.card button{
+    background-color: var(--background-buttons);
+    font-size: var(--text-size-button);
+    font-family: var(--font-style);
+    color: var(--text-color-black);
+    text-align: center;
+    padding: 10px;
+    font-weight: 900;
+    border-radius: 50px 8px;
+    margin-top: 10px;
+    border: none;
+}
+.price
+{
+    margin-top:10px ;
+}
+

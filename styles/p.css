@@ -1,0 +1,118 @@
+/******************************** general **************************************/
+
+:root
+{    --background-body:#eee;
+    --background-card:#eeeeee99;
+    --background-buttons:#fff;
+    --master-color:#e5cc99;
+    --text-color-white:#FFF;
+    --text-color-black:#000;
+    --text-size-head:30px;
+    --text-size-list:14px;
+    --text-size-head:30px;
+    --text-size-list:14px;
+    --text-size-name-app:20px;
+    --text-color-info:rgba(255, 0, 0, 0.724);
+    --width-image:90%;
+    --height-image:90%;
+    --width-box:30px;
+    --height-box:30px;
+    --width-area-box:50px;
+    --font-style:Lexend Deca;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family:var(--font-style);
+    font-weight: 900;
+    height: 100vh;
+    background-color:var(--background-body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/********************/
+.profile
+{
+    background-color: var(--background-card);
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.image-profile
+{
+    width: 150px;;
+    object-fit: cover;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px black ;
+}
+.image_session
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-upload-image
+{
+color: var(--text-color-info);
+}
+
+.information
+{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px 50px;
+}
+input
+{
+    color: var(--text-color-info);
+    font-family:var(--font-style);
+    width: fit-content;
+    font-size:16px;
+    background-color: transparent;
+    border: unset;
+}
+
+.sv
+{
+    position: absolute;
+    z-index: -1;
+}
+
+.contener-buttons
+{
+    margin-top: 50px;
+    text-align: end;
+}
+.buttons
+{
+    font-size: 20px;
+    font-family: var(--font-style);
+    border-radius: 50px;
+    padding: 3px;
+}
+#save-btn
+{
+    background-color: var(--master-color);
+}
+
+#btn-add-design
+{
+    padding: 5px;
+    color: var(--text-color-black);
+    background-color: var(--master-color);
+    text-decoration: none;
+    border-radius: 8px;
+}

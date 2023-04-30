@@ -1,0 +1,320 @@
+/******************************** general **************************************/
+
+:root
+{    --background-card:#e5cc99aa;
+    --bacground-body:#eee;
+    --background-buttons:#fff;
+    --master-color:#e5cc99;
+    --text-color-white:#FFF;
+    --text-color-black:#000;
+    --text-size-head:30px;
+    --text-size-list:14px;
+    --text-size-button:14px;
+    --text-size-name-app:20px;
+    --text-color-attribute:#F00;
+    --width-image:300px;
+    --height-image:300px;
+    --width-box:30px;
+    --height-box:30px;
+    --width-area-box:50px;
+    --font-style:Lexend Deca;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family:var(--font-style);
+    font-weight: 900;
+    background-color: var(--bacground-body);
+}
+
+/************************************** navbar ************************************/
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    box-shadow: black 1px 1px 10px;
+    background-color:var(--master-color);
+}
+nav .name-website
+{
+    font-size:var(--text-size-head);
+    padding-left: 20px;
+    color: var(--text-color-white);
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+nav ul li {
+    margin: 0px 10px;
+    align-items:center;
+}
+.link-list
+{
+    text-decoration: none;
+    color: var(--text-color-black);
+    background-color:var(--background-buttons);
+    padding: 10px;
+    font-size:var(--text-size-list) ;
+    border-radius:50px 8px ;
+}
+.login 
+{
+    display:flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#name-login
+{
+    color:var(--text-color-black);
+    font-size: var(--text-size-list);
+    text-decoration: none;
+    margin: 2px;
+}
+
+.image-profile
+{
+width:30px;
+height: 30px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+/***************************** filter *************************************/
+.filter
+{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content:center;
+    align-items: center;
+    margin-top: 10px;
+}
+.filter label
+{
+    margin: 0px 10px 0px 10px;
+    color: var(--text-color-black);
+}
+
+.box
+{
+    height: var(--height-box);
+    width:var(--width-area-box);
+    color: var(--text-color-black);
+    
+
+}
+
+.filter-button
+{
+    margin-left: 20px;
+    width: 40px;
+}
+.filter select
+{
+    width: var(--width-box);
+    height: var(--height-box);
+    color:var(--text-color-black);
+}
+
+.filter-contener
+{
+    display: flex;
+    justify-content: center;
+    align-items: center
+    
+}
+
+#city_id
+{
+    width: fit-content;
+}
+
+/***************************************** body *************************************************/
+
+.container-item
+{
+    display: grid;
+    grid-template-columns:75% auto;
+    margin-top: 10px;
+    
+}
+
+.design
+{
+    display: flex ;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px;
+    justify-content: space-evenly;
+
+
+}
+.company
+{
+    display: flex;
+    flex-flow: column;
+   
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    .design
+    {
+        display: grid ;
+        gap: 10px;
+        grid-template-columns: auto  ;
+        padding: 10px;
+       
+    }
+}
+
+
+
+/**************************************** card in body *************************/
+.card
+{
+    background-color:var(--background-card);
+    padding: 10px;
+    display: inline-flex;
+    flex-flow: column;
+    border-radius: 50px 8px;
+    font-family:var(--font-style);
+    
+}
+.card img{
+    align-self: center;
+    width:var(--width-image);
+    height: var(--height-image);
+    border-radius: 20px;
+    
+}
+.card img:hover{
+
+    transform: scale(1.5);
+    transition-duration:3s;
+    transition-timing-function: ease-in-out;
+}
+
+.card  span
+{
+color: var(--text-color-attribute);
+}
+
+.card button{
+    background-color: var(--text-color-white);
+    font-size: var(--text-size-button);
+    font-family: var(--font-style);
+    color: var(--text-color-black);
+    text-align: center;
+    padding: 10px;
+    font-weight: 900;
+    border-radius: 50px 8px;
+    margin-top: 10px;
+    border: none;
+}
+.price
+{
+    margin-top:10px ;
+}
+
+
+/**************************** side links *******************************/
+
+.link-company
+{
+    color:var(--text-color-black);
+    font-family:var(--font-style);
+    background-color: var(--background-buttons);
+    font-size: var(--text-size-button);
+    font-weight: 900;
+    border-bottom: #000 1px solid;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+/******************************** about us section **********************/
+.about-us-section
+{
+    text-align: center;
+    background-color:var(--master-color);
+    padding: 10px;
+    margin-top: 100px;
+    color: var(--text-color-white)
+
+}
+
+/*************************************** contact *************************/
+.contact-section
+{
+    text-align: center;
+    background-color:var(--master-color);
+    padding: 10px;
+    margin-top: 100px;
+    color:var(--text-color-white);
+
+}
+
+/******************************** drop down ****************************/
+
+.dropbtn {
+    color: var(--text-color-black);
+    background-color: var(--master-color);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  
+  /*.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }*/
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    float:left;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
